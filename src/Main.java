@@ -1,25 +1,29 @@
-public class Main {
+package TugasPBO;
 
-    public static void main(string args[]) {
-        Scanner input = new Scanner(System.in);
-        int tinggi_segitiga,i,j,k;
+    import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
-        System.out.print("Input tinggi segitiga: ");
-        tinggi_segitiga = input.nextInt();
-
-        System.out.println();
-
-        for(i=1; i<=tinggi_segitiga; i++) {
-
-            for(j=1; j<=tinggi_segitiga-i; j++) {
-                System.out.print(" ");
-            }
-
-            for(k=1; k<=i; k++) {
-                System.out.print(" *");
-            }
-            System.out.println();
+    public class main {
+        public main() {
         }
 
+        public static void main(String[] args) throws Exception {
+            TugasPBO.Login user_login = new TugasPBO.Login();
+            BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+            System.out.println("Silahkan Login");
+            System.out.print("Masukkan UserName : ");
+            String user = bf.readLine();
+            System.out.print("Masukkan Password : ");
+            String pw = bf.readLine();
+            System.out.println("=============================");
+            if (user.equals(user_login.getUser()) && pw.equals(user_login.getPw_user()) || user.equals(user_login.getAdmin()) && pw.equals(user_login.getPw_admin())) {
+                if (user.equals(user_login.getUser())) {
+                    System.out.println("Selamat datang User");
+                } else if (user.equals(user_login.getAdmin())) {
+                    System.out.println("Selamat datang Admin");
+                }
+            }
+
+        }
     }
-}
+
