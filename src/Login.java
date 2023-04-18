@@ -1,56 +1,54 @@
 package TugasPBO;
 
 public class Login {
-    public class Login {
-        private String user;
-        private String pw_user;
-        private String admin;
-        private String pw_admin;
+    private String user;
+    private String password_user;
+    private String admin;
+    private String password_admin;
 
-        public Login() {
-            this.user = "Intan";
-            this.pw_user = "pwuser";
-            this.admin = "Intanoka";
-            this.pw_admin = "dinokuninng";
-        }
+    public Login() {
+        this.user = "Intanuser";
+        this.password_user = "intan12";
+        this.admin = "Intan";
+        this.password_admin = "dinokuning";
+    }
 
-        public Login(String user, String pw_user, String admin, String pw_admin) {
-            this.user = user;
-            this.pw_user = pw_user;
-            this.admin = admin;
-            this.pw_admin = pw_admin;
-        }
+    public Login(String user, String password_user, String admin, String password_admin) {
+        this.user = user;
+        this.password_user = password_user;
+        this.admin = admin;
+        this.password_admin = password_admin;
+    }
 
-        public void setUser(String user) {
-            this.user = user;
-        }
+    public void setUser(String user) {
+        this.user = user;
+    }
 
-        public void setPw_user(String pw_user) {
-            this.pw_user = pw_user;
-        }
+    public void setPassword_user(String password_user) {
+        this.password_user = password_user;
+    }
 
-        public void setAdmin(String admin) {
-            this.admin = admin;
-        }
+    public void setAdmin(String admin) {
+        this.admin = admin;
+    }
 
-        public void setPw_admin(String pw_admin) {
-            this.pw_admin = pw_admin;
-        }
+    public void setPassword_admin(String password_admin) {
+        this.password_admin = password_admin;
+    }
 
-        public String getUser() {
-            return this.user;
-        }
+    public String getUser() {
+        return this.user;
+    }
 
-        public String getPw_user() {
-            return this.pw_user;
-        }
+    public String getPassword_user() {
+        return this.password_user;
+    }
 
-        public String getAdmin() {
-            return this.admin;
-        }
+    public String getAdmin() {
+        return this.admin;
+    }
 
-        public String getPw_admin() {
-            return this.pw_admin;
-        }
+    public String getPassword_admin() {
+        return this.password_admin;
     }
 }
