@@ -11,15 +11,16 @@ public class admin {
 
             // Login System
             while (!isLoggedIn) {
-                System.out.print("Masukkan username: ");
+                System.out.print("Masukkan username anda: ");
                 String username = scanner.nextLine();
-                System.out.print("Masukkan password: ");
+                System.out.print("Masukkan password anda: ");
                 String password = scanner.nextLine();
 
                 if (username.equals("admin") && password.equals("password")) {
                     isLoggedIn = true;
+                    System.out.println("Hallo, Selamat Datang");
                 } else {
-                    System.out.println("Username atau password salah. Coba lagi.");
+                    System.out.println("Username atau password anda salah. Coba lagi.");
                 }
             }
 
@@ -46,11 +47,11 @@ public class admin {
                         hapusRestaurant(scanner);
                         break;
                     case 4:
-                        System.out.println("Berhasil Logout.");
+                        System.out.println("Logout Sukses");
                         isRunning = false;
                         break;
                     default:
-                        System.out.println("Pilihan salah. Coba lagi.");
+                        System.out.println("Masukkan pilihan yang benar");
                 }
             }
 
@@ -72,7 +73,7 @@ public class admin {
             System.out.print("Masukkan nama restaurant: ");
             String namaRestaurant = scanner.nextLine();
             restaurants.add(namaRestaurant);
-            System.out.println("Berhasil menambahkan restaurant.");
+            System.out.println("Restaurant telah ditambahkan");
         }
 
         private static void hapusRestaurant(Scanner scanner) {
